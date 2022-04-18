@@ -5,183 +5,95 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港01 1x, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 4422, type: ss, cipher: aes-128-gcm, password: db916518-465e-405e-9a71-309ce8844288, udp: true}
-  - {name: HK-香港BGP-深电隧道2x, server: china-ct-cs01.898868.xyz, port: 11104, type: ss, cipher: chacha20-ietf-poly1305, password: 9bdd73fd-cc62-44a1-9365-ae465421cf09, udp: true}
-  - {name: 香港05 3x, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 3697, type: ss, cipher: chacha20-ietf-poly1305, password: db916518-465e-405e-9a71-309ce8844288, udp: true}
-  - {name: 香港B 0.2x, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6828, type: trojan, password: db916518-465e-405e-9a71-309ce8844288, sni: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: SG-A新加坡-泉新隧道2x, server: cn2.node.zeroteam.top, port: 53036, type: ss, cipher: chacha20-ietf-poly1305, password: 9bdd73fd-cc62-44a1-9365-ae465421cf09, udp: true}
-  - {name: 韩国01 1x, server: eb0453114ec45064654e57eeb394d6671csda.jkcloud.xyz, port: 6599, type: ss, cipher: chacha20-ietf-poly1305, password: db916518-465e-405e-9a71-309ce8844288, udp: true}
-  - {name: 台湾 1x, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6826, type: trojan, password: db916518-465e-405e-9a71-309ce8844288, sni: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港A 1x, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6827, type: trojan, password: db916518-465e-405e-9a71-309ce8844288, sni: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: SG-新加坡N-深港隧道2x, server: gy.syhwdz.top, port: 18351, type: ss, cipher: chacha20-ietf-poly1305, password: 9bdd73fd-cc62-44a1-9365-ae465421cf09, udp: true}
-  - {name: 新加坡03 1x, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6701, type: ss, cipher: chacha20-ietf-poly1305, password: db916518-465e-405e-9a71-309ce8844288, udp: true}
-  - {name: 香港02 1x, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 5484, type: ss, cipher: aes-128-gcm, password: db916518-465e-405e-9a71-309ce8844288, udp: true}
-  - {name: HK-香港HKG-泉移隧道2x, server: cn1.node.zeroteam.top, port: 28743, type: ss, cipher: chacha20-ietf-poly1305, password: 9bdd73fd-cc62-44a1-9365-ae465421cf09, udp: true}
-  - {name: HK-香港BGP-深移隧道2x, server: gy.syhwdz.top, port: 48974, type: ss, cipher: chacha20-ietf-poly1305, password: 9bdd73fd-cc62-44a1-9365-ae465421cf09, udp: true}
-  - {name: 香港HGC-深电隧道2x, server: china-ct-cs01.898868.xyz, port: 11105, type: trojan, password: 9bdd73fd-cc62-44a1-9365-ae465421cf09, sni: china-ct-cs01.898868.xyz, skip-cert-verify: true, udp: true}
-  - {name: "Trojan|香港HKBN01|华南隧道[流媒体解锁]", server: cm-jm.okvpn.xyz, port: 20000, type: trojan, password: b69f9f66-1dcf-4d3f-9eb4-dff39f845d0e, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡B 1x, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 7645, type: trojan, password: db916518-465e-405e-9a71-309ce8844288, sni: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: AU-澳大利亚悉尼-广港隧道2x, server: gy.cm.01.211129.xyz, port: 41536, type: ss, cipher: chacha20-ietf-poly1305, password: 9bdd73fd-cc62-44a1-9365-ae465421cf09, udp: true}
-  - {name: JP-日本-泉日隧道1.5x, server: cn2.node.zeroteam.top, port: 54889, type: ss, cipher: chacha20-ietf-poly1305, password: 9bdd73fd-cc62-44a1-9365-ae465421cf09, udp: true}
-  - {name: 柬埔寨B 1x, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6829, type: trojan, password: db916518-465e-405e-9a71-309ce8844288, sni: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: 韩国05 1x, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6592, type: ss, cipher: chacha20-ietf-poly1305, password: db916518-465e-405e-9a71-309ce8844288, udp: true}
-  - {name: 香港HGC-泉港隧道2x, server: cn2.node.zeroteam.top, port: 41717, type: trojan, password: 9bdd73fd-cc62-44a1-9365-ae465421cf09, sni: cn2.node.zeroteam.top, skip-cert-verify: true, udp: true}
-  - {name: 韩国04 1x, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6592, type: ss, cipher: chacha20-ietf-poly1305, password: db916518-465e-405e-9a71-309ce8844288, udp: true}
-  - {name: SG-新加坡M-西安隧道1.5x, server: cn3.node.zeroteam.top, port: 63930, type: ss, cipher: chacha20-ietf-poly1305, password: 9bdd73fd-cc62-44a1-9365-ae465421cf09, udp: true}
-  - {name: 西班牙 1x, server: 00178641680d4f73a85ff60e4cd27628sasa.jkcloud.xyz, port: 6726, type: ss, cipher: chacha20-ietf-poly1305, password: db916518-465e-405e-9a71-309ce8844288, udp: true}
-  - {name: JP-日本-深港隧道2x, server: china-ct-cs01.898868.xyz, port: 11103, type: ss, cipher: chacha20-ietf-poly1305, password: 9bdd73fd-cc62-44a1-9365-ae465421cf09, udp: true}
-  - {name: 新加坡02 1x, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6700, type: ss, cipher: chacha20-ietf-poly1305, password: db916518-465e-405e-9a71-309ce8844288, udp: true}
-  - {name: US-加利福-深港隧道2x, server: dg1.9218561.xyz, port: 26448, type: trojan, password: 9bdd73fd-cc62-44a1-9365-ae465421cf09, sni: dg1.9218561.xyz, skip-cert-verify: true, udp: true}
-  - {name: 乌克兰 1x, server: 00178641680d4f73a85ff60e4cd27628sasa.jkcloud.xyz, port: 6724, type: ss, cipher: chacha20-ietf-poly1305, password: db916518-465e-405e-9a71-309ce8844288, udp: true}
-  - {name: "Trojan|台湾HiNet01|华南隧道[流媒体解锁]", server: cm-jm.okvpn.xyz, port: 20003, type: trojan, password: b69f9f66-1dcf-4d3f-9eb4-dff39f845d0e, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国08 1x, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6394, type: ss, cipher: chacha20-ietf-poly1305, password: db916518-465e-405e-9a71-309ce8844288, udp: true}
-  - {name: KR-韩国-广韩隧道2x, server: cn1.node.zeroteam.top, port: 54314, type: ss, cipher: chacha20-ietf-poly1305, password: 9bdd73fd-cc62-44a1-9365-ae465421cf09, udp: true}
-  - {name: 德国2 1x, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6392, type: ss, cipher: chacha20-ietf-poly1305, password: db916518-465e-405e-9a71-309ce8844288, udp: true}
-  - {name: "Trojan|新加坡Singtel01|华南隧道[流媒体解锁]", server: cm-jm.okvpn.xyz, port: 20005, type: trojan, password: b69f9f66-1dcf-4d3f-9eb4-dff39f845d0e, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国06 1x, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6385, type: ss, cipher: chacha20-ietf-poly1305, password: db916518-465e-405e-9a71-309ce8844288, udp: true}
-  - {name: 美国04 1x, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6270, type: ss, cipher: chacha20-ietf-poly1305, password: db916518-465e-405e-9a71-309ce8844288, udp: true}
-  - {name: 德国 1x, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6392, type: ss, cipher: chacha20-ietf-poly1305, password: db916518-465e-405e-9a71-309ce8844288, udp: true}
-  - {name: 印度-孟买_0.3#138@1710G, server: s138.s2022.xyz, port: 42087, type: vmess, uuid: 367f28c4-aaf0-3a3a-b84a-873d2729ce9e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /panelmyadmin, ws-headers: {Host: s138.s2022.xyz}, udp: true}
-  - {name: 印度-孟买_0.3#130@1710G, server: s138.s2022.xyz, port: 31980, type: vmess, uuid: 367f28c4-aaf0-3a3a-b84a-873d2729ce9e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /panelmyadmin, ws-headers: {Host: s138.s2022.xyz}, udp: true}
-  - {name: 韩国02 1x, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6599, type: ss, cipher: chacha20-ietf-poly1305, password: db916518-465e-405e-9a71-309ce8844288, udp: true}
-  - {name: HK-香港-0.5x, server: idch23h.idc114514.xyz, port: 65506, type: trojan, password: 9bdd73fd-cc62-44a1-9365-ae465421cf09, sni: idch23h.idc114514.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港05 3x, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 3697, type: ss, cipher: chacha20-ietf-poly1305, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, udp: true}
+  - {name: 韩国01 1x, server: eb0453114ec45064654e57eeb394d6671csda.jkcloud.xyz, port: 6599, type: ss, cipher: chacha20-ietf-poly1305, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, udp: true}
+  - {name: 台湾 1x, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6826, type: trojan, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, sni: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港D 1x, server: ipv4.zjls.cm.jkcloud.xyz, port: 7644, type: trojan, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, sni: ipv4.zjls.cm.jkcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡02 1x, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6700, type: ss, cipher: chacha20-ietf-poly1305, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, udp: true}
+  - {name: 香港A 1x, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6827, type: trojan, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, sni: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 柬埔寨B 1x, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6829, type: trojan, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, sni: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 韩国05 1x, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6592, type: ss, cipher: chacha20-ietf-poly1305, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, udp: true}
+  - {name: 美国04 1x, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6270, type: ss, cipher: chacha20-ietf-poly1305, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, udp: true}
+  - {name: 韩国04 1x, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6592, type: ss, cipher: chacha20-ietf-poly1305, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, udp: true}
+  - {name: 韩国02 1x, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6599, type: ss, cipher: chacha20-ietf-poly1305, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, udp: true}
+  - {name: 美国07 1x, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6385, type: ss, cipher: chacha20-ietf-poly1305, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, udp: true}
+  - {name: 美国08 1x, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6394, type: ss, cipher: chacha20-ietf-poly1305, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, udp: true}
+  - {name: 美国06 1x, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6385, type: ss, cipher: chacha20-ietf-poly1305, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, udp: true}
+  - {name: 柬埔寨A 1x, server: ipv4.zjls.cm.jkcloud.xyz, port: 7636, type: trojan, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, sni: ipv4.zjls.cm.jkcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港B 0.2x, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6828, type: trojan, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, sni: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港C 1x, server: ipv4.zjls.cm.jkcloud.xyz, port: 7635, type: trojan, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, sni: ipv4.zjls.cm.jkcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港01 1x, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 4422, type: ss, cipher: aes-128-gcm, password: 67d44571-954f-42a7-b59a-dddd8f61f0b9, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港01 1x
-      - HK-香港BGP-深电隧道2x
       - 香港05 3x
-      - 香港B 0.2x
-      - SG-A新加坡-泉新隧道2x
       - 韩国01 1x
       - 台湾 1x
+      - 香港D 1x
+      - 新加坡02 1x
       - 香港A 1x
-      - SG-新加坡N-深港隧道2x
-      - 新加坡03 1x
-      - 香港02 1x
-      - HK-香港HKG-泉移隧道2x
-      - HK-香港BGP-深移隧道2x
-      - 香港HGC-深电隧道2x
-      - Trojan|香港HKBN01|华南隧道[流媒体解锁]
-      - 新加坡B 1x
-      - AU-澳大利亚悉尼-广港隧道2x
-      - JP-日本-泉日隧道1.5x
       - 柬埔寨B 1x
       - 韩国05 1x
-      - 香港HGC-泉港隧道2x
-      - 韩国04 1x
-      - SG-新加坡M-西安隧道1.5x
-      - 西班牙 1x
-      - JP-日本-深港隧道2x
-      - 新加坡02 1x
-      - US-加利福-深港隧道2x
-      - 乌克兰 1x
-      - Trojan|台湾HiNet01|华南隧道[流媒体解锁]
-      - 美国08 1x
-      - KR-韩国-广韩隧道2x
-      - 德国2 1x
-      - Trojan|新加坡Singtel01|华南隧道[流媒体解锁]
-      - 美国06 1x
       - 美国04 1x
-      - 德国 1x
-      - 印度-孟买_0.3#138@1710G
-      - 印度-孟买_0.3#130@1710G
+      - 韩国04 1x
       - 韩国02 1x
-      - HK-香港-0.5x
+      - 美国07 1x
+      - 美国08 1x
+      - 美国06 1x
+      - 柬埔寨A 1x
+      - 香港B 0.2x
+      - 香港C 1x
+      - 香港01 1x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港01 1x
-      - HK-香港BGP-深电隧道2x
       - 香港05 3x
-      - 香港B 0.2x
-      - SG-A新加坡-泉新隧道2x
       - 韩国01 1x
       - 台湾 1x
+      - 香港D 1x
+      - 新加坡02 1x
       - 香港A 1x
-      - SG-新加坡N-深港隧道2x
-      - 新加坡03 1x
-      - 香港02 1x
-      - HK-香港HKG-泉移隧道2x
-      - HK-香港BGP-深移隧道2x
-      - 香港HGC-深电隧道2x
-      - Trojan|香港HKBN01|华南隧道[流媒体解锁]
-      - 新加坡B 1x
-      - AU-澳大利亚悉尼-广港隧道2x
-      - JP-日本-泉日隧道1.5x
       - 柬埔寨B 1x
       - 韩国05 1x
-      - 香港HGC-泉港隧道2x
-      - 韩国04 1x
-      - SG-新加坡M-西安隧道1.5x
-      - 西班牙 1x
-      - JP-日本-深港隧道2x
-      - 新加坡02 1x
-      - US-加利福-深港隧道2x
-      - 乌克兰 1x
-      - Trojan|台湾HiNet01|华南隧道[流媒体解锁]
-      - 美国08 1x
-      - KR-韩国-广韩隧道2x
-      - 德国2 1x
-      - Trojan|新加坡Singtel01|华南隧道[流媒体解锁]
-      - 美国06 1x
       - 美国04 1x
-      - 德国 1x
-      - 印度-孟买_0.3#138@1710G
-      - 印度-孟买_0.3#130@1710G
+      - 韩国04 1x
       - 韩国02 1x
-      - HK-香港-0.5x
+      - 美国07 1x
+      - 美国08 1x
+      - 美国06 1x
+      - 柬埔寨A 1x
+      - 香港B 0.2x
+      - 香港C 1x
+      - 香港01 1x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港01 1x
-      - HK-香港BGP-深电隧道2x
       - 香港05 3x
-      - 香港B 0.2x
-      - SG-A新加坡-泉新隧道2x
       - 韩国01 1x
       - 台湾 1x
+      - 香港D 1x
+      - 新加坡02 1x
       - 香港A 1x
-      - SG-新加坡N-深港隧道2x
-      - 新加坡03 1x
-      - 香港02 1x
-      - HK-香港HKG-泉移隧道2x
-      - HK-香港BGP-深移隧道2x
-      - 香港HGC-深电隧道2x
-      - Trojan|香港HKBN01|华南隧道[流媒体解锁]
-      - 新加坡B 1x
-      - AU-澳大利亚悉尼-广港隧道2x
-      - JP-日本-泉日隧道1.5x
       - 柬埔寨B 1x
       - 韩国05 1x
-      - 香港HGC-泉港隧道2x
-      - 韩国04 1x
-      - SG-新加坡M-西安隧道1.5x
-      - 西班牙 1x
-      - JP-日本-深港隧道2x
-      - 新加坡02 1x
-      - US-加利福-深港隧道2x
-      - 乌克兰 1x
-      - Trojan|台湾HiNet01|华南隧道[流媒体解锁]
-      - 美国08 1x
-      - KR-韩国-广韩隧道2x
-      - 德国2 1x
-      - Trojan|新加坡Singtel01|华南隧道[流媒体解锁]
-      - 美国06 1x
       - 美国04 1x
-      - 德国 1x
-      - 印度-孟买_0.3#138@1710G
-      - 印度-孟买_0.3#130@1710G
+      - 韩国04 1x
       - 韩国02 1x
-      - HK-香港-0.5x
+      - 美国07 1x
+      - 美国08 1x
+      - 美国06 1x
+      - 柬埔寨A 1x
+      - 香港B 0.2x
+      - 香港C 1x
+      - 香港01 1x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -200,205 +112,106 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港01 1x
-      - HK-香港BGP-深电隧道2x
       - 香港05 3x
-      - 香港B 0.2x
-      - SG-A新加坡-泉新隧道2x
       - 韩国01 1x
       - 台湾 1x
+      - 香港D 1x
+      - 新加坡02 1x
       - 香港A 1x
-      - SG-新加坡N-深港隧道2x
-      - 新加坡03 1x
-      - 香港02 1x
-      - HK-香港HKG-泉移隧道2x
-      - HK-香港BGP-深移隧道2x
-      - 香港HGC-深电隧道2x
-      - Trojan|香港HKBN01|华南隧道[流媒体解锁]
-      - 新加坡B 1x
-      - AU-澳大利亚悉尼-广港隧道2x
-      - JP-日本-泉日隧道1.5x
       - 柬埔寨B 1x
       - 韩国05 1x
-      - 香港HGC-泉港隧道2x
-      - 韩国04 1x
-      - SG-新加坡M-西安隧道1.5x
-      - 西班牙 1x
-      - JP-日本-深港隧道2x
-      - 新加坡02 1x
-      - US-加利福-深港隧道2x
-      - 乌克兰 1x
-      - Trojan|台湾HiNet01|华南隧道[流媒体解锁]
-      - 美国08 1x
-      - KR-韩国-广韩隧道2x
-      - 德国2 1x
-      - Trojan|新加坡Singtel01|华南隧道[流媒体解锁]
-      - 美国06 1x
       - 美国04 1x
-      - 德国 1x
-      - 印度-孟买_0.3#138@1710G
-      - 印度-孟买_0.3#130@1710G
+      - 韩国04 1x
       - 韩国02 1x
-      - HK-香港-0.5x
+      - 美国07 1x
+      - 美国08 1x
+      - 美国06 1x
+      - 柬埔寨A 1x
+      - 香港B 0.2x
+      - 香港C 1x
+      - 香港01 1x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港01 1x
-      - HK-香港BGP-深电隧道2x
       - 香港05 3x
-      - 香港B 0.2x
       - 台湾 1x
+      - 香港D 1x
       - 香港A 1x
-      - SG-新加坡N-深港隧道2x
-      - 香港02 1x
-      - HK-香港HKG-泉移隧道2x
-      - HK-香港BGP-深移隧道2x
-      - 香港HGC-深电隧道2x
-      - Trojan|香港HKBN01|华南隧道[流媒体解锁]
-      - AU-澳大利亚悉尼-广港隧道2x
-      - 香港HGC-泉港隧道2x
-      - JP-日本-深港隧道2x
-      - US-加利福-深港隧道2x
-      - Trojan|台湾HiNet01|华南隧道[流媒体解锁]
-      - HK-香港-0.5x
+      - 香港B 0.2x
+      - 香港C 1x
+      - 香港01 1x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港01 1x
-      - HK-香港BGP-深电隧道2x
       - 香港05 3x
-      - 香港B 0.2x
-      - SG-A新加坡-泉新隧道2x
       - 韩国01 1x
       - 台湾 1x
+      - 香港D 1x
+      - 新加坡02 1x
       - 香港A 1x
-      - SG-新加坡N-深港隧道2x
-      - 新加坡03 1x
-      - 香港02 1x
-      - HK-香港HKG-泉移隧道2x
-      - HK-香港BGP-深移隧道2x
-      - 香港HGC-深电隧道2x
-      - Trojan|香港HKBN01|华南隧道[流媒体解锁]
-      - 新加坡B 1x
-      - AU-澳大利亚悉尼-广港隧道2x
-      - JP-日本-泉日隧道1.5x
       - 柬埔寨B 1x
       - 韩国05 1x
-      - 香港HGC-泉港隧道2x
-      - 韩国04 1x
-      - SG-新加坡M-西安隧道1.5x
-      - 西班牙 1x
-      - JP-日本-深港隧道2x
-      - 新加坡02 1x
-      - US-加利福-深港隧道2x
-      - 乌克兰 1x
-      - Trojan|台湾HiNet01|华南隧道[流媒体解锁]
-      - 美国08 1x
-      - KR-韩国-广韩隧道2x
-      - 德国2 1x
-      - Trojan|新加坡Singtel01|华南隧道[流媒体解锁]
-      - 美国06 1x
       - 美国04 1x
-      - 德国 1x
-      - 印度-孟买_0.3#138@1710G
-      - 印度-孟买_0.3#130@1710G
+      - 韩国04 1x
       - 韩国02 1x
-      - HK-香港-0.5x
+      - 美国07 1x
+      - 美国08 1x
+      - 美国06 1x
+      - 柬埔寨A 1x
+      - 香港B 0.2x
+      - 香港C 1x
+      - 香港01 1x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港01 1x
-      - HK-香港BGP-深电隧道2x
       - 香港05 3x
-      - 香港B 0.2x
-      - SG-A新加坡-泉新隧道2x
       - 韩国01 1x
       - 台湾 1x
+      - 香港D 1x
+      - 新加坡02 1x
       - 香港A 1x
-      - SG-新加坡N-深港隧道2x
-      - 新加坡03 1x
-      - 香港02 1x
-      - HK-香港HKG-泉移隧道2x
-      - HK-香港BGP-深移隧道2x
-      - 香港HGC-深电隧道2x
-      - Trojan|香港HKBN01|华南隧道[流媒体解锁]
-      - 新加坡B 1x
-      - AU-澳大利亚悉尼-广港隧道2x
-      - JP-日本-泉日隧道1.5x
       - 柬埔寨B 1x
       - 韩国05 1x
-      - 香港HGC-泉港隧道2x
-      - 韩国04 1x
-      - SG-新加坡M-西安隧道1.5x
-      - 西班牙 1x
-      - JP-日本-深港隧道2x
-      - 新加坡02 1x
-      - US-加利福-深港隧道2x
-      - 乌克兰 1x
-      - Trojan|台湾HiNet01|华南隧道[流媒体解锁]
-      - 美国08 1x
-      - KR-韩国-广韩隧道2x
-      - 德国2 1x
-      - Trojan|新加坡Singtel01|华南隧道[流媒体解锁]
-      - 美国06 1x
       - 美国04 1x
-      - 德国 1x
-      - 印度-孟买_0.3#138@1710G
-      - 印度-孟买_0.3#130@1710G
+      - 韩国04 1x
       - 韩国02 1x
-      - HK-香港-0.5x
+      - 美国07 1x
+      - 美国08 1x
+      - 美国06 1x
+      - 柬埔寨A 1x
+      - 香港B 0.2x
+      - 香港C 1x
+      - 香港01 1x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港01 1x
-      - HK-香港BGP-深电隧道2x
       - 香港05 3x
-      - 香港B 0.2x
-      - SG-A新加坡-泉新隧道2x
       - 韩国01 1x
       - 台湾 1x
+      - 香港D 1x
+      - 新加坡02 1x
       - 香港A 1x
-      - SG-新加坡N-深港隧道2x
-      - 新加坡03 1x
-      - 香港02 1x
-      - HK-香港HKG-泉移隧道2x
-      - HK-香港BGP-深移隧道2x
-      - 香港HGC-深电隧道2x
-      - Trojan|香港HKBN01|华南隧道[流媒体解锁]
-      - 新加坡B 1x
-      - AU-澳大利亚悉尼-广港隧道2x
-      - JP-日本-泉日隧道1.5x
       - 柬埔寨B 1x
       - 韩国05 1x
-      - 香港HGC-泉港隧道2x
-      - 韩国04 1x
-      - SG-新加坡M-西安隧道1.5x
-      - 西班牙 1x
-      - JP-日本-深港隧道2x
-      - 新加坡02 1x
-      - US-加利福-深港隧道2x
-      - 乌克兰 1x
-      - Trojan|台湾HiNet01|华南隧道[流媒体解锁]
-      - 美国08 1x
-      - KR-韩国-广韩隧道2x
-      - 德国2 1x
-      - Trojan|新加坡Singtel01|华南隧道[流媒体解锁]
-      - 美国06 1x
       - 美国04 1x
-      - 德国 1x
-      - 印度-孟买_0.3#138@1710G
-      - 印度-孟买_0.3#130@1710G
+      - 韩国04 1x
       - 韩国02 1x
-      - HK-香港-0.5x
+      - 美国07 1x
+      - 美国08 1x
+      - 美国06 1x
+      - 柬埔寨A 1x
+      - 香港B 0.2x
+      - 香港C 1x
+      - 香港01 1x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -414,46 +227,24 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港01 1x
-      - HK-香港BGP-深电隧道2x
       - 香港05 3x
-      - 香港B 0.2x
-      - SG-A新加坡-泉新隧道2x
       - 韩国01 1x
       - 台湾 1x
+      - 香港D 1x
+      - 新加坡02 1x
       - 香港A 1x
-      - SG-新加坡N-深港隧道2x
-      - 新加坡03 1x
-      - 香港02 1x
-      - HK-香港HKG-泉移隧道2x
-      - HK-香港BGP-深移隧道2x
-      - 香港HGC-深电隧道2x
-      - Trojan|香港HKBN01|华南隧道[流媒体解锁]
-      - 新加坡B 1x
-      - AU-澳大利亚悉尼-广港隧道2x
-      - JP-日本-泉日隧道1.5x
       - 柬埔寨B 1x
       - 韩国05 1x
-      - 香港HGC-泉港隧道2x
-      - 韩国04 1x
-      - SG-新加坡M-西安隧道1.5x
-      - 西班牙 1x
-      - JP-日本-深港隧道2x
-      - 新加坡02 1x
-      - US-加利福-深港隧道2x
-      - 乌克兰 1x
-      - Trojan|台湾HiNet01|华南隧道[流媒体解锁]
-      - 美国08 1x
-      - KR-韩国-广韩隧道2x
-      - 德国2 1x
-      - Trojan|新加坡Singtel01|华南隧道[流媒体解锁]
-      - 美国06 1x
       - 美国04 1x
-      - 德国 1x
-      - 印度-孟买_0.3#138@1710G
-      - 印度-孟买_0.3#130@1710G
+      - 韩国04 1x
       - 韩国02 1x
-      - HK-香港-0.5x
+      - 美国07 1x
+      - 美国08 1x
+      - 美国06 1x
+      - 柬埔寨A 1x
+      - 香港B 0.2x
+      - 香港C 1x
+      - 香港01 1x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
